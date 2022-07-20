@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 02</title>
+</head>
+
+<body>
+    <h1>배열 공부하기 02</h1>
+    <ul id="UL"></ul>
+
+    <script>
+        // 1. 배열을 돌아서(순회) 배열 각각을 표현 - 일반  for.
+        const 그냥배열 = ['하나', '두울', '세에엣', '네에엣', '다서어엇'];
+
+        console.log(그냥배열.length);
+
+        //초기값, 비교값, 증가값
+
+        for (i = 0; i < 그냥배열.length; i++) {
+            console.log(그냥배열[i]);
+        }
+
+
+        for (i = 그냥배열.length - 1; i >= 0; i--) {
+            console.log(그냥배열[i]);
+        }
+
+
+        //for ... in문. i는 index key를 반환한다.
+        for (i in 그냥배열) {
+            console.log(i);
+        }
+
+        //for ... of문. i는 value를 반환한다.
+        for (i of 그냥배열) {
+            console.log(i);
+        }
+
+        // for문을 이용해서 HTML을 생성한다.
+        for (i of 그냥배열) {
+            UL.innerHTML += '<li> ' + i + '</li>'
+        }
+
+    </script>
+</body>
+
+</html>
