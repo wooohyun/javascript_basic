@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수 실습 01</title>
+</head>
+
+<body>
+    <div id="box">나 박스 </div>
+    <script>
+        const BOX = document.getElementById('box');
+        console.log(BOX, typeof (BOX));
+        const 글자바꾸기 = function () {
+          this.innerText = 'ㄱㄴㄱㄷ'
+        }
+        BOX.addEventListener('click', 글자바꾸기)
+    </script>
+</body>
+
+</html>
